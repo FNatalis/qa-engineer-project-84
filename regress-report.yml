@@ -1,0 +1,7 @@
+---
+test-cases:
+  - summary: |
+      Проверка скорости работы сайта
+    status: pass
+
+ bugreports: []
