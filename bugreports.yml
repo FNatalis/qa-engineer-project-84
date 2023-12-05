@@ -1,0 +1,17 @@
+---
+- summary: |
+    Задержка в прогрузке элементов страницы 
+  environment: |
+    Google Chrome  119.0.6045.200 (Официальная сборка) (64 бит)
+    ОС Windows 11 Pro
+  steps-to-reproduce: |
+    Полный перечень шагов для воспроизведения и описание, на каком шаге произошла ошибка
+    1. Зайти на главную страницу https://hexlet-products-store.vercel.app/
+    2. Открыть DevTools
+    3. Зайти во вкладку Network
+    4. Перезагрузить страницу
+  expected-result: |
+    Все элементы должны загружаться с допустимой скоростью. Отсутствие ошибок в Javascript во вкладке Console 
+  actual-result: |
+    Элементы random.css и author.js загрузились со статусом failed, в console отображается ошибка ERR_NAME_NOT_RESOLVED
+    Загружен скриншот Scrn1
