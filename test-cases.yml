@@ -286,3 +286,18 @@
     - Выбираем Русский язык
   expected-result: |
     На странице интернет-магазина, должен отобразиться текст полностью на русском языке
+
+    - summary: |
+    Проверка запросов в devtools на наличие ошибок.
+  requirement: |
+    Запросы в devtools должны уходить и приходить без ошибок
+  prerequisites: |
+    Открыта главная страница интернет-магазина 
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    devtools/браузер Google Chrome
+  steps:
+    - Откройте вкладку "Network" в DevTools.
+    - Обновите страницу для отправки HTTP-запроса.
+  expected-result: |
+    Во вкладке Network должна отобразиться информация о запросах без ошибок.
