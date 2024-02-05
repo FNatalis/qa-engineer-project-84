@@ -301,3 +301,23 @@
     - Обновите страницу для отправки HTTP-запроса.
   expected-result: |
     Во вкладке Network должна отобразиться информация о запросах без ошибок.
+
+    - summary: |
+    Проверка сайта на адаптивность
+  requirement: |
+    Пользователь должен иметь возможность открывать интернет-магазин на мобильном устройстве
+  prerequisites: |
+    Открыта главная страница интернет-магазина 
+    https://hexlet-products-store.vercel.app/
+  test-data: |
+    iphone SE
+    iPad Pro
+    samsung galaxy S20 ultra
+  steps:
+    - Переходим в Devtools
+    - Открываем Toggle device toolbar
+    - Проверяем размер iphone SE
+    - Проверяем размер iPad Pro
+    - Проверяем размер samsung galaxy S20 ultra
+  expected-result: |
+    Все элементы главной страницы интернет-магазина должны отобразиться корректно, адаптировано по размеру, не растянуто.
